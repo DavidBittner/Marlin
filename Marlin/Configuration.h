@@ -747,8 +747,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-//These are calibrated for 16 microsteps. Switched to 256, therefore *16
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80*16, 80*16, 400*16, 415*16 }
+//These are calibrated for 16 microsteps. Switched to 32, therefore *2
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80*2, 80*2, 400*2, 415*2 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -832,7 +832,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-#define S_CURVE_ACCELERATION
+//#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
